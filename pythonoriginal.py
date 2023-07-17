@@ -23,6 +23,7 @@ my_pwm2 = GPIO.PWM(in4,1000)
 my_pwm1.start(0)
 my_pwm2.start(0)
 
+#this function to control motor moving forward.
 def motor1_forward(a):
  GPIO.output(in1,GPIO.HIGH)
  my_pwm1.ChangeDutyCycle(100-a)
